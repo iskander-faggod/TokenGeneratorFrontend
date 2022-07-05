@@ -20,7 +20,7 @@ const Register = (): ReactElement => {
     const register = async () => {
         if (password && email && passwordValidation) {
             try {
-                await axios.post(`https://localhost:7059/api/Authenticate/register`, {
+                const token = await axios.post(`https://localhost:7059/api/Authenticate/register`, {
                     email: email,
                     password: password,
                     confirmedPassword: confirmedPassword
