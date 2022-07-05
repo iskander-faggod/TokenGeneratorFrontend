@@ -14,8 +14,3 @@ export const StyledHeader = styled.div`
   font-size: 40px;
 `;
 
-export const StyledLink = styled.p`
-  margin-left: 20px;
-  color: white;
-  font-size: 20px;
-`;
